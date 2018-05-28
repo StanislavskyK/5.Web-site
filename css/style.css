@@ -33,7 +33,7 @@ h6 {
 }
 .background {
     width: 1400px;
-    height: 5900px;
+    height: 5800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +117,7 @@ h6 {
 }
 .Services {
     width: 1400px;
-    height: 480px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,4 +296,169 @@ h6 {
     width: 1400px;
     height: 818px;
     background-color:  #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.team-text {
+    width: 600px;
+    text-align: center;
+}
+.Team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Team-container-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.Team-block {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 7px;
+    border-color:  #ffffff;
+    background-color:  #111111;
+    width: 220px;
+    height: 221px;
+}
+.Team-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Team-social a {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color:  #222222;
+    box-sizing: border-box;
+    background-color:  #f9f9f9;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: .3s;
+}
+.Team-social a:hover {
+    transform: translateY(-3px);
+}
+.Logos {
+    width: 1400px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Logos-container {
+    width: 765px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Contact {
+    width: 1400px;
+    height: 666px;
+    background-color:  #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.contact-text {
+    text-align: center;
+    margin-top: 50px;
+}
+.Contact h2 {
+    color: #ffffff;
+}
+.Contact-form {
+    width: 942px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-name,
+.form-mail,
+.form-subject {
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #cccccc;
+    background-color:  #ffffff;
+    width: 455px;
+    height: 50px;
+}
+.form-message {
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #cccccc;
+    background-color:  #ffffff;
+    width: 455px;
+    height: 210px;
+}
+.form-button {
+    border-radius: 3px;
+    background-color:  #fed136;
+    width: 240px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.form-button:hover {
+    transform: translateY(-5px);
+}
+.form-button h3 {
+    color: #ffffff;
+}
+.Footer {
+    width: 1400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Footer-container {
+    width: 565px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.Footer-container p {
+    color: #333333;
+}
+.footer-social {
+    width: 191px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-icon {
+    border-radius: 50%;
+    background-color:  #222222;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.footer-icon:hover {
+    transform: translateY(-7px);
 }

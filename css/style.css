@@ -40,13 +40,22 @@ h6 {
     flex-direction: column;
     align-items: center;
 }
-.Header {
-    width: 933px;
+.header-container {
+    max-width: 1400px;
+    width: 100%;
     height: 28px;
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+.Header {
+    max-width: 1400px;
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding-top: 40px;
 }
 .header-logo {
@@ -70,10 +79,17 @@ h6 {
 }
 .header-menu-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
+}
+.header-menu-container input {
+    display: none;
+}
+.header-menu-container label {
+    cursor: pointer;
+    display: none;
 }
 .header-menu:hover {
     transform: translateY(-5px);
@@ -127,7 +143,7 @@ h6 {
     justify-content: center;
 }
 .Services-container {
-    width: 934px;
+    width: 100%;
     height: 330px;
     display: flex;
     align-items: center;
@@ -137,7 +153,7 @@ h6 {
     color:  #222222;
 }
 .Services-example-container {
-    width: 934px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,16 +195,17 @@ h6 {
     flex-direction: column;
 }
 .Portfolio-row {
-    width: 941px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 60px;
 }
 .Portfolio-item {
     background-color:  #ffffff;
     text-align: center;
-    width: 291px;
+    max-width: 291px;
+    width: 100%;
     height: 394px;
     transition: .3s;
 }
@@ -212,7 +229,7 @@ h6 {
     justify-content: center;
 }
 .About-container {
-    width: 874px;
+    width: 100%;
     height: 1426px;
     display: flex;
     align-items: center;
@@ -228,13 +245,15 @@ h6 {
 
 .About-stories-1,
 .About-stories-3 {
-    width: 874px;
+    max-width: 874px;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 .About-stories-2,
 .About-stories-4 {
-    width: 874px;
+    max-width: 874px;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -309,7 +328,8 @@ h6 {
     flex-direction: column;
 }
 .team-text {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
 }
 .Team-container {
@@ -366,7 +386,8 @@ h6 {
     justify-content: center;
 }
 .Logos-container {
-    width: 765px;
+    max-width: 765px;
+    width: 100%;
     height: 43px;
     display: flex;
     align-items: center;
@@ -390,7 +411,8 @@ h6 {
     color: #ffffff;
 }
 .Contact-form {
-    width: 942px;
+    width: 100%;
+    max-width: 942px;
     height: 210px;
     display: flex;
     flex-direction: column;
@@ -442,7 +464,8 @@ h6 {
     justify-content: space-between;
 }
 .Footer-container {
-    width: 565px;
+    width: 100%;
+    max-width: 565px;
     height: 41px;
     display: flex;
     align-items: center;

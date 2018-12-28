@@ -1,0 +1,359 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+h2
+  font-family: Myriad-Pro
+  font-size: 30px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 1.9px
+  text-align: center
+  color: rgb(43, 43, 43)
+  text-transform: uppercase
+h3
+  font-family: Myriad-Pro
+  font-size: 24px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 1.2px
+  text-align: left
+  color: rgb(43, 43, 43)
+h4
+  font-family: Myriad-Pro
+  font-size: 18px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 1.1px
+  text-align: left
+  color: rgb(255, 255, 255)
+  text-transform: uppercase
+h5
+  font-family: Myriad-Pro
+  font-size: 18px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 0.9px
+  text-align: left
+  color: rgb(43, 43, 43)
+  text-transform: uppercase
+h6
+  font-family: Myriad-Pro
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 0.7px
+  text-align: center
+  color: rgb(0, 120, 37)
+p
+  font-family: Myriad-Pro
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 0.7px
+  text-align: left
+  color: rgb(212, 212, 212)
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $accent
+	transition: .3s ease
+	border: none
+	box-shadow: 0 0 14.6px 1.4px rgba(0, 0, 0, 0.25)
+	&:hover
+		transform: translateY(-2px)
+
+
+  // header
+
+
+
+header
+	width: 100vw
+	height: 100vh
+	nav
+		padding-top: 15px
+		div
+			display: flex
+			align-items: center
+			justify-content: space-between
+			h4
+				margin-left: 20px
+				margin-right: 20px
+				transition: .3s ease
+				&:hover
+					transform: translateY(-2px)
+					color: $accent
+		position: relative
+		z-index: 3
+		display: flex
+		align-items: center
+		justify-content: space-around
+		width: 100vw
+		img
+			width: 15%
+			transition: .3s ease
+			&:hover
+				transform: translateY(-2px)
+.header-background
+	position: absolute
+	width: 100vw
+	height: 100vh
+	background-image: url(../img/head/head-1.jpg)
+	background-size: cover
+	background-position: center
+.header-composition
+	position: relative
+	z-index: 1
+	display: flex
+	align-items: center
+	justify-content: space-around
+	margin-top: 175px
+	.header-composition__container
+		background-image: url(../img/head/card.png)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		height: 200px
+		width: 22%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		opacity: 0.8
+		transition: .3s ease
+		&:hover
+			opacity: 1
+			transform: translateY(-10px)
+		h2
+			margin-left: 20px
+			margin-right: 20px
+		button
+			margin-top: 15px
+
+
+
+// Menu
+
+
+
+.Menu__h6
+	position: absolute
+	left: 150px
+	top: -45px
+h1
+  font-family: Myriad-Pro
+  font-size: 42px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 2.1px
+  text-align: center
+  color: $accent
+  text-transform: uppercase
+  margin-top: 60px
+  margin-bottom: 70px
+.Menu-container
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 60px
+.Menu
+	.container
+		.row
+			flex-direction: column
+.Menu-container__list
+	display: flex
+	align-items: center
+	justify-content: center
+	img
+		margin-bottom: 15px
+		transition: .3s ease
+		&:hover
+			transform: translateY(-2px)
+.Menu-container__list-menu
+	display: flex
+	align-items: start
+	justify-content: center
+	flex-direction: column
+	margin-left: 15px
+.Menu-container__list-container
+	display: flex
+.Menu-container__list-pay
+	background-image: url(../img/menu/menu-card.png)
+	background-repeat: no-repeat
+	display: flex
+	justify-content: center
+	align-items: center
+	background-size: cover
+	width: 48px
+  	height: 27px
+.menu-online
+	display: flex
+	justify-content: center
+	align-items: center
+.menu-online__composition
+	h6
+		color: $accent
+	display: flex
+	justify-content: center
+	align-items: start
+	flex-direction: column
+	h5
+		padding-top: 10px
+		padding-bottom: 15px
+	p
+		padding-bottom: 15px
+
+
+
+// about
+
+
+
+.about
+	background-image: url(../img/about/background.jpg)
+	height: 490px
+	background-position: center
+	background-size: cover
+	margin-top: 60px
+	display: flex
+	justify-content: center
+	align-items: center
+.about-container
+	background-image: url(../img/about/1.png)
+	background-position: center
+	background-size: contain
+	background-repeat: no-repeat
+	height: 240px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+.about-map
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 15px
+	margin-bottom: 15px
+	p
+		color: $accent
+		margin-top: 15px
+		margin-left: 15px
+
+
+
+
+// footer
+
+
+
+
+footer
+	background-image: url(../img/footer/1.jpg)
+	background-position: center
+	background-size: cover
+	height: 274px
+	h5
+		color: #fff
+		margin-bottom: 15px
+	a
+	  font-family: Myriad-Pro
+	  font-size: 17px
+	  font-weight: normal
+	  font-style: normal
+	  font-stretch: normal
+	  line-height: normal
+	  letter-spacing: 0.9px
+	  text-align: left
+	  color: rgb(187, 187, 187)
+	  text-transform: uppercase
+.footer-container
+	display: flex
+	align-items: center
+	justify-content: space-around
+	margin-top: 85px
+.footer-links
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	margin-right: 30px
+	a
+		transition: .3s ease
+		&:hover
+			color: $accent
+.footer-links__container
+	display: flex
+body input, body textarea
+	border: none
+	opacity: 0.5
+::placeholder
+  font-family: Myriad-Pro
+  font-size: 12px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: 0.6px
+  text-align: left
+  color: #333
+.footer-form
+	margin-left: 150px
+.footer-form__form
+	display: flex
+	align-items: center
+	justify-content: center
+	button
+		margin-left: 15px
+		width: 70px
+@import "media" // Always at the end

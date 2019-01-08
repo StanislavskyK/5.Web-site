@@ -21,7 +21,7 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-
+	<link  rel = " stylesheet "  href = "libs/animate.css/animate.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -33,8 +33,8 @@
 	<header>
 		<div class="header-background"></div>
 		<nav>
-			<img src="img/head/icon-1.png" alt="icon">
-			<div>
+			<img src="img/head/icon-1.png" alt="icon" class="animated bounceInLeft">
+			<div class="animated bounceInRight">
 				<h4>price list</h4>
 				<h4>opening hours</h4>
 				<h4>about us</h4>
@@ -42,15 +42,15 @@
 			</div>
 		</nav>
 		<div class="header-composition">
-			<div class="header-composition__container">
+			<div class="header-composition__container animated bounceInLeft">
 				<h2>For meat lovers</h2>
 				<button class="button">full menu</button>
 			</div>
-			<div class="header-composition__container">
+			<div class="header-composition__container animated bounceInUp">
 				<h2>Vegetarian & Vegan</h2>
 				<button class="button">full menu</button>
 			</div>
-			<div class="header-composition__container">
+			<div class="header-composition__container animated bounceInRight">
 				<h2>see our secrets</h2>
 				<button class="button">full menu</button>
 			</div>
@@ -59,11 +59,11 @@
 	<section class="Menu">
 		<div class="container">
 			<div class="row">
-				<h1>Daily menu</h1>
+				<h1 class="wow animated bounceInRight">Daily menu</h1>
 				<div class="Menu-container col-12">
-					<h6 class="Menu__h6">Show vegan menu only</h6>
+					<h6 class="Menu__h6 wow animated bounceInLeft">Show vegan menu only</h6>
 					<div class="Menu-container__list col-6 offset-lg-0
-					offset-3">
+					offset-3 wow animated flipInX">
 						<img src="img/menu/menu-1.png" alt="menu">
 						<div class="Menu-container__list-menu">
 							<div class="Menu-container__list-container">
@@ -74,7 +74,7 @@
 						</div>
 					</div>
 					<div class="Menu-container__list col-6 offset-lg-0
-					offset-3">
+					offset-3 wow animated flipInX">
 						<img src="img/menu/menu-2.png" alt="menu">
 						<div class="Menu-container__list-menu">
 							<div class="Menu-container__list-container">
@@ -85,7 +85,7 @@
 						</div>
 					</div>
 					<div class="Menu-container__list col-6 offset-lg-0
-					offset-3">
+					offset-3 wow animated flipInX">
 						<img src="img/menu/menu-3.png" alt="menu">
 						<div class="Menu-container__list-menu">
 							<div class="Menu-container__list-container">
@@ -96,7 +96,7 @@
 						</div>
 					</div>
 					<div class="Menu-container__list col-6 offset-lg-0
-					offset-3">
+					offset-3 wow animated flipInX">
 						<img src="img/menu/menu-4.png" alt="menu">
 						<div class="Menu-container__list-menu">
 							<div class="Menu-container__list-container">
@@ -107,7 +107,7 @@
 						</div>
 					</div>
 					<div class="Menu-container__list col-6 offset-lg-0
-					offset-3">
+					offset-3 wow animated flipInX">
 						<img src="img/menu/menu-5.png" alt="menu">
 						<div class="Menu-container__list-menu">
 							<div class="Menu-container__list-container">
@@ -118,7 +118,7 @@
 						</div>
 					</div>
 					<div class="Menu-container__list col-6 offset-lg-0
-					offset-3">
+					offset-3 wow animated flipInX">
 						<img src="img/menu/menu-6.png" alt="menu">
 						<div class="Menu-container__list-menu">
 							<div class="Menu-container__list-container">
@@ -129,7 +129,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu-online__container owl-carousel">
+				<div class="menu-online__container owl-carousel wow animated flipInX">
 					<div class="menu-online">
 						<img src="img/menu/pasta.jpg" alt="pasta" class="col-6">
 						<div class="menu-online__composition col-4">
@@ -167,7 +167,7 @@
 	<section class="about">
 		<div class="container">
 			<div class="row">
-				<div class="about-container col-md-6 offset-md-3 col-10 offset-1">
+				<div class="about-container col-md-6 offset-md-3 col-10 offset-1 wow animated rotateInUpLeft">
 					<h5>Where to find us?</h5>
 					<div class="about-map">
 						<img src="img/about/2.png" alt="icon">
@@ -181,7 +181,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="footer-container col-12 offset--sm-1 col-sm-10">
+				<div class="footer-container col-12 offset--sm-1 col-sm-10 wow animated bounceInRight">
 					<div class="footer-links__container col-12">
 						<div class="footer-links hidden-sm">
 							<h5>About us</h5>
@@ -217,6 +217,6 @@
 		</div>
 	</footer>
 	<script src="js/scripts.min.js"></script>
-
+	<script src="js/wow.min.js"></script>
 </body>
 </html>

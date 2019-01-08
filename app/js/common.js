@@ -20,4 +20,18 @@ $(function() {
             }
         }
     });
+
+     // Wow.js library
+        wow = new WOW (
+    {
+        boxClass: 'wow', // default
+        animateClass: 'animated', // default
+        offset: 100,
+        mobile: true, // default
+        live: true // default
+    })
+
+
+     wow.init ( );
+
 });
